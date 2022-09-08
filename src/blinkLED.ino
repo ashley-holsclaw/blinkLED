@@ -1,4 +1,4 @@
-// We define MY_LED to be the LED that we want to blink.
++// We define MY_LED to be the LED that we want to blink.
 //
 // In this tutorial, we're using the blue D7 LED (next to D7 on the Photon
 // and Electron, and next to the USB connector on the Argon and Boron).
@@ -23,19 +23,12 @@ void setup()
 }
 
 // The loop() method is called frequently.
-void loop()
-{
-	// Turn on the LED
-	digitalWrite(MY_LED, HIGH);
-
-	// Leave it on for one second
-	delay(3s);
-
-	// Turn it off
-	digitalWrite(MY_LED, LOW);
-
-	// Wait one more second
-	delay(1s);
-
-	// And repeat!
-}
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+    flash(200); flash(200); flash(200); // S
+    delay(300); // otherwise the flashes run together
+    flash(500); flash(500); flash(500); // O
+    flash(200); flash(200); flash(200); // S
+    delay(1000);
+    
