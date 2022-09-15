@@ -1,4 +1,4 @@
-# OCN 479 - blinkLED
+# OCN 479 - blinkLED SOS
 
 Person 1: Create a GitHub repository for your LED blinking code from last class. Commit your code and push it to the main branch of the repository.
 
